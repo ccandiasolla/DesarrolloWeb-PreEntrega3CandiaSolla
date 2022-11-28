@@ -91,7 +91,7 @@ $violetita2: #cccfd3;
     animation-name: start;
     animation-iteration-count: initial;
 }
-.containerr .footer{
+.footer{
     grid-area: footer;
 }
 #index_img{
@@ -110,7 +110,7 @@ $violetita2: #cccfd3;
 //////////* FOOTER *//////////
 .footer{
     display: flex;
-    width: auto;
+    height: 70px;
     align-items: center;
     justify-content: right;
     padding: 5px 15px;
