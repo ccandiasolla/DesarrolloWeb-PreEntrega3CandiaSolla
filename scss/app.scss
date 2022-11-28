@@ -3,10 +3,19 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
+//////////* VARIABLES *//////////
+$azulcito: #2c348b;
+$rojito: rgb(173, 6, 6);
+$gricesito: rgb(220, 220, 220);
+$gricesito2: rgb(180, 180, 180);
+$violetita: #dcdde9;
+$violetita2: #cccfd3;
+
 //////////* ESTILOS HEADER *//////////
 .header{
     display: flex;
     padding: 0px 15px;
+    height: 90px;
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(to bottom, $gricesito2, $gricesito);
@@ -47,7 +56,7 @@ body{
 .header_logo{
     width: auto;
     height: 75px;
-    padding: 10px 15px;
+    padding: 10px 10px;
 }
 //////////* ESTILO INDEX + GRID *//////////
 .container{
@@ -155,7 +164,8 @@ ul li{
 }
 .container-galeria{
     padding: 20px 5px;
-    background-image: linear-gradient(to right, $violetita2, viol);
+    display: inline-block;
+    background-image: linear-gradient(to right, $violetita2, $violetita);
     animation-duration: 3s;
     animation-name: start;
     animation-iteration-count: initial;
@@ -200,7 +210,7 @@ ul li{
         font-size: 24;
     }
     .header_logo{
-        height: 50px;
+        height: 60px;
     }
     .nav-link{
         font-size: 14;
@@ -215,15 +225,19 @@ ul li{
     #index_logo{
         width: 200px;
     }
+    .contacto-footer{
+        padding: 2px;
+    }
 }
-
-//////////* VARIABLES *//////////
-$azulcito: #2c348b;
-$rojito: rgb(173, 6, 6);
-$gricesito: rgb(220, 220, 220);
-$gricesito2: rgb(180, 180, 180);
-$violetita: #dcdde9;
-$violetita2: #cccfd3;
-
-
- 
+@media screen and (max-width: 580px){
+    .header_logo{
+        display: none;
+    }
+    .header{
+        justify-content: space-around;
+    }
+    .galeria_img{
+        width: 100%;
+        padding: 5px 0px;
+    }
+}
