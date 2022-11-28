@@ -90,6 +90,7 @@ body {
 .footer {
   display: flex;
   height: 70px;
+  width: auto;
   align-items: center;
   justify-content: right;
   padding: 5px 15px;
