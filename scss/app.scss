@@ -59,7 +59,7 @@ $violetita2: #cccfd3;
     padding: 10px 10px;
 }
 //////////* ESTILO INDEX + GRID *//////////
-.containerr{
+.container{
     background-image: linear-gradient(to right, #cccfd3, #dcdde9);
     width: 100%;
     display: grid;
@@ -72,17 +72,17 @@ $violetita2: #cccfd3;
         "footer footer";
     min-height: 100vh;
 }
-.containerr .header{
+.header{
     grid-area: header;
 }
-.containerr .container_img{
+.container_img{
     padding: 20px 10px;
     grid-area: img;
     animation-duration: 6s;
     animation-name: start;
     animation-iteration-count: initial;
 }
-.containerr .container_text{
+.container_text{
     grid-area: txt;
     padding: 40px 20px 0px 20px;
     text-align: center;
@@ -197,7 +197,7 @@ ul li{
 }
 //////////* VERSION MOVIL *//////////
 @media screen and (max-width: 1000px){
-    .containerr{
+    .container{
     grid-template-areas:
         "header  header"
         "txt txt"
