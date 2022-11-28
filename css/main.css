@@ -5,6 +5,7 @@ body {
 .header {
   display: flex;
   padding: 0px 15px;
+  height: 90px;
   justify-content: space-between;
   align-items: center;
   background-image: linear-gradient(to bottom, #b4b4b4, gainsboro); }
@@ -41,9 +42,9 @@ body {
 .header_logo {
   width: auto;
   height: 75px;
-  padding: 10px 15px; }
+  padding: 10px 10px; }
 
-.container_c {
+.container {
   background-image: linear-gradient(to right, #cccfd3, #dcdde9);
   width: 100%;
   display: grid;
@@ -52,17 +53,17 @@ body {
   grid-template-areas: "header header" "img txt" "img txt" "footer footer";
   min-height: 100vh; }
 
-.container_c .header {
+.container .header {
   grid-area: header; }
 
-.container_c .container_img {
+.container .container_img {
   padding: 20px 10px;
   grid-area: img;
   animation-duration: 6s;
   animation-name: start;
   animation-iteration-count: initial; }
 
-.container_c .container_text {
+.container .container_text {
   grid-area: txt;
   padding: 40px 20px 0px 20px;
   text-align: center;
@@ -71,7 +72,7 @@ body {
   animation-name: start;
   animation-iteration-count: initial; }
 
-.container_c .footer {
+.container .footer {
   grid-area: footer; }
 
 #index_img {
@@ -138,7 +139,8 @@ ul li {
 
 .container-galeria {
   padding: 20px 5px;
-  background-image: linear-gradient(to right, #cccfd3, viol);
+  display: inline-block;
+  background-image: linear-gradient(to right, #cccfd3, #dcdde9);
   animation-duration: 3s;
   animation-name: start;
   animation-iteration-count: initial; }
@@ -169,14 +171,14 @@ ul li {
   padding: 20px 10px; }
 
 @media screen and (max-width: 1000px) {
-  .container_c {
+  .container {
     grid-template-areas: "header  header" "txt txt" "img img" "footer footer";
     grid-template-rows: 60px auto;
     min-height: 1vh; }
   #index_text {
     font-size: 24; }
   .header_logo {
-    height: 50px; }
+    height: 60px; }
   .nav-link {
     font-size: 14; }
   .nav-link1 {
@@ -185,4 +187,15 @@ ul li {
     padding: 1px;
     justify-content: center; }
   #index_logo {
-    width: 200px; } }
+    width: 200px; }
+  .contacto-footer {
+    padding: 2px; } }
+
+@media screen and (max-width: 580px) {
+  .header_logo {
+    display: none; }
+  .header {
+    justify-content: space-around; }
+  .galeria_img {
+    width: 100%;
+    padding: 5px 0px; } }
