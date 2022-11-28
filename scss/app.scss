@@ -96,7 +96,7 @@ $violetita2: #cccfd3;
 }
 #index_img{
     border-radius: 20px;
-    width: 100%;
+    width: 600px;
 }
 #index_logo{
     width: 300px;
@@ -200,13 +200,14 @@ ul li{
 //////////* VERSION MOVIL *//////////
 @media screen and (max-width: 1000px){
     .container{
-    grid-template-areas:
-        "header  header"
-        "txt txt"
-        "img img"
-        "footer footer";
-    grid-template-rows: 60px auto;
-    min-height: 1vh;
+        display: grid;
+        grid-template-areas:
+            "header  header"
+            "txt txt"
+            "img img"
+            "footer footer";
+        grid-template-rows: 60px auto;
+        min-height: 1vh;
     }
     #index_text{
         font-size: 24;
