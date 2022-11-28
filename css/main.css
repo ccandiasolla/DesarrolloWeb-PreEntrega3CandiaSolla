@@ -192,7 +192,10 @@ ul li {
   #index_logo {
     width: 200px; }
   .contacto-footer {
-    padding: 2px; } }
+    padding: 2px; }
+  .container_img {
+    display: flex;
+    justify-content: space-around; } }
 
 @media screen and (max-width: 580px) {
   .header_logo {
@@ -201,4 +204,7 @@ ul li {
     justify-content: space-around; }
   .galeria_img {
     width: 100%;
-    padding: 5px 0px; } }
+    padding: 5px 0px; }
+  #index_img {
+    object-fit: cover;
+    width: 100%; } }
