@@ -58,10 +58,7 @@ body {
 
 .container_img {
   padding: 20px 10px;
-  grid-area: img;
-  animation-duration: 6s;
-  animation-name: start;
-  animation-iteration-count: initial; }
+  grid-area: img; }
 
 .container_text {
   grid-area: txt;
@@ -77,7 +74,10 @@ body {
 
 #index_img {
   border-radius: 20px;
-  width: 600px; }
+  width: 600px;
+  animation-duration: 3s;
+  animation-name: start;
+  animation-iteration-count: initial; }
 
 #index_logo {
   width: 300px; }
@@ -125,11 +125,9 @@ body {
 ul li {
   display: flex; }
 
-/* NOSOTROS */
 .img_puerto {
   width: 100%; }
 
-/* ESTILO CONTACTO */
 .container-contacto .contacto-list {
   justify-content: center; }
 

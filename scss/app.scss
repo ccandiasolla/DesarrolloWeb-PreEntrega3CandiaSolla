@@ -11,6 +11,13 @@ $gricesito2: rgb(180, 180, 180);
 $violetita: #dcdde9;
 $violetita2: #cccfd3;
 
+//////////* MIXINS *//////////
+@mixin transition-3s{
+    animation-duration: 3s;
+    animation-name: start;
+    animation-iteration-count: initial;
+}
+
 //////////* ESTILOS HEADER *//////////
 .header{
     display: flex;
@@ -78,9 +85,6 @@ $violetita2: #cccfd3;
 .container_img{
     padding: 20px 10px;
     grid-area: img;
-    animation-duration: 6s;
-    animation-name: start;
-    animation-iteration-count: initial;
 }
 .container_text{
     grid-area: txt;
@@ -97,6 +101,7 @@ $violetita2: #cccfd3;
 #index_img{
     border-radius: 20px;
     width: 600px;
+    @include transition-3s;
 }
 #index_logo{
     width: 300px;
@@ -149,12 +154,12 @@ ul li{
     display: flex;
 }
 
-/* NOSOTROS *//////////
+//////////* NOSOTROS *//////////
 .img_puerto{
     width: 100%;
 }
 
-/* ESTILO CONTACTO *//////////
+//////////* ESTILO CONTACTO *//////////
 .container-contacto .contacto-list{
     justify-content: center;
 }
@@ -168,31 +173,23 @@ ul li{
     padding: 20px 5px;
     display: inline-block;
     background-image: linear-gradient(to right, $violetita2, $violetita);
-    animation-duration: 3s;
-    animation-name: start;
-    animation-iteration-count: initial;
+    @include transition-3s;
 }
 .container-carta{
     padding: 20px 10px;
     background-image: linear-gradient(to right, $violetita2, $violetita);
-    animation-duration: 3s;
-    animation-name: start;
-    animation-iteration-count: initial;
+    @include transition-3s;
 }
 .container-contacto{
     padding: 20px 10px;
     height: auto;
     background-image: linear-gradient(to right, $violetita2, $violetita);
-    animation-duration: 3s;
-    animation-name: start;
-    animation-iteration-count: initial;
+    @include transition-3s;
 }
 .container-nosotros{
     padding: 20px 10px;
     background-image: linear-gradient(to right, $violetita2, $violetita);
-    animation-duration: 3s;
-    animation-name: start;
-    animation-iteration-count: initial;
+    @include transition-3s;
 }
 .nosotros-text{
     padding: 20px 10px;
